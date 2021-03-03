@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sample Appium Test Cases Automation Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+    
+    <test name="Test">
+        <parameter name="emulator" value="true"/>
+        <parameter name="udid" value="RZ8N71AVTVA"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="10.0"/>
+        <parameter name="deviceName" value="Pixel_2_XL"/>
+        <classes>
+            <class name="tests.LoginPageTest"></class>
+            <class name="tests.ProductsPageTest"></class>
+        </classes>
+    </test>
+
+
+
+<!--    <test name="Test">-->
+<!--        &lt;!&ndash;        <parameter name="emulator" value="true"/>&ndash;&gt;-->
+<!--        <parameter name="platformName" value="iOS"/>-->
+<!--        <parameter name="platformVersion" value="14.2"/>-->
+<!--        <parameter name="deviceName" value="iPhone 11"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginPageTest"></class>-->
+<!--            <class name="tests.ProductsPageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
+

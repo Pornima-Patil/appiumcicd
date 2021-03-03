@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TDD Framework Test Cases Automation Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+    
+    <test name="Test">
+<!--        <parameter name="emulator" value="true"/>-->
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="platformVersion" value="14.2"/>
+        <parameter name="deviceName" value="iPhone 11"/>
+        <classes>
+            <class name="tests.LoginPageTest"></class>
+            <class name="tests.ProductsPageTest"></class>
+        </classes>
+    </test>
+</suite>
+
