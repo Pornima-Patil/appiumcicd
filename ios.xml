@@ -12,7 +12,7 @@
         <parameter name="deviceName" value="iPhone 11"/>
         <classes>
             <class name="tests.LoginPageTest"></class>
-            <class name="tests.ProductsPageTest"></class>
+<!--            <class name="tests.ProductsPageTest"></class>-->
         </classes>
     </test>
 </suite>
